@@ -1,27 +1,22 @@
 body {
   background-color: lightblue;
-
 }
 
 h1 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 300px;
-
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
 }
 
 h1 {
   text-align: center;
-
 }
 
-h3{
+h3 {
   color: blue;
-
 }
 
 h2 {
   color: purple;
-
 }
