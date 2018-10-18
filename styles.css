@@ -1,6 +1,12 @@
 h1 img {
   width: 300px;
 }
+
+h1{
+  color: blue;
+
+}
+
 h2 {
   color: purple;
 }
