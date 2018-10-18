@@ -1,8 +1,5 @@
-#banimage{
-  background-image: url("images/banner2old.jpg");
-   height: 405px;
-   background-color: white;
-   background-position: center;
+h1{
+  color: blue;
 }
 
 h2 {
