@@ -6,6 +6,72 @@
   <meta charset="UTF-8">
   <title>Emma's Portal Page</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Ariel, sans-serif;
+      align-content: center;
+
+    }
+
+    /*This is the page container div where you declare CSS grid display
+  and set up how many columns and rows are needed for the overall page.
+  fr is a fractional, scalable unit for relative portions of the page,
+  but you can use other units like pixels too*/
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: .2fr;
+      max-width: 80vw;
+      margin: auto;
+    }
+
+    /*Here the header "item" is set to row 1 and set to span column lines 1-5, ie.
+  all 4 columns that were set up in the container*/
+
+    .projects {
+      background-color: #ff84ff;
+      grid-row: 1;
+      grid-column: 1/2;
+      padding-left: 2rem;
+			padding-bottom: 1rem;
+      padding-right: 2rem;
+      padding-top: 1rem;
+    }
+
+    .exercises {
+      background-color: #e7b2f7;
+      grid-row: 1;
+      grid-column: 2/3;
+      padding-left: 2rem;
+      padding-bottom: 1rem;
+      padding-right: 2rem;
+      padding-top: 1rem;
+    }
+
+
+    .links {
+      grid-row: 1;
+      grid-column: 3/4;
+      background-color: #afb5ff;
+      padding-left: 2rem;
+      padding-bottom: 1rem;
+      padding-right: 2rem;
+      padding-top: 1rem;
+
+    }
+
+    section {
+      background-color: #96c3f7;
+      grid-row: 1;
+      grid-column: 4/5;
+      padding-left: 2rem;
+      padding-bottom: 1rem;
+      padding-right: 2rem;
+      padding-top: 1rem;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -24,70 +90,71 @@
       <!--The intro is separated into two paragraphs for better spacing-->
 
     </header>
-
   </div>
 
-  <section>
-    <h2>Projects</h2>
+  <div class="container">
+    <section class="projects">
+      <h2>Projects</h2>
 
-    <h3>Favorite Projects/ Finished Projects</h3>
-    <ul>
-      <li><a href="index.html">Project 1 (This Portal Page)</a></li>
+      <h3>Favorite Projects/ Finished Projects</h3>
+      <ul>
+        <li><a href="index.html">Project 1 (This Portal Page)</a></li>
 
-    </ul>
-    <h3>Other Projects/ Unfinished Projects</h3>
-    <ul>
-      <li><a href="#">Project 2</a></li>
-      <li><a href="#">Project 3</a></li>
-    </ul>
-  </section>
+      </ul>
+      <h3>Other Projects/ Unfinished Projects</h3>
+      <ul>
+        <li><a href="#">Project 2</a></li>
+        <li><a href="#">Project 3</a></li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Exercises</h2>
+    <section class="exercises">
+      <h2>Exercises</h2>
 
-    <h3>Favorite Exercises/ Finished Exercises</h3>
-    <ul>
-      <li><a href="exercises/exercise1.html">Exercise 1</a></li>
-      <li><a href="exercises/exercise2/ex2pt1.html">Exercise 2, Part 1</a></li>
-      <li><a href="exercises/exercise2/ex2pt2.html">Exercise 2, Part 2</a></li>
-      <li><a href="exercises/exercise2/ex2pt3.html">Exercise 2, Part 3</a></li>
-      <li><a href="exercises/ex3.html">Exercise 3</a></li>
-      <li><a href="exercises/exercise4/exercise4.html">Exercise 4</a></li>
-      <li><a href="https://elbaier.github.io/pressstart2p/index.html">Exercise 5</a></li>
-    </ul>
-    <h3>Other Exercises/ Unfinished Exercises</h3>
-    <ul>
-      <li><a href="#">Exercise 6</a></li>
-      <li><a href="#">Exercise 7</a></li>
-    </ul>
-  </section>
+      <h3>Favorite Exercises/ Finished Exercises</h3>
+      <ul>
+        <li><a href="exercises/exercise1.html">Exercise 1</a></li>
+        <li><a href="exercises/exercise2/ex2pt1.html">Exercise 2, Part 1</a></li>
+        <li><a href="exercises/exercise2/ex2pt2.html">Exercise 2, Part 2</a></li>
+        <li><a href="exercises/exercise2/ex2pt3.html">Exercise 2, Part 3</a></li>
+        <li><a href="exercises/ex3.html">Exercise 3</a></li>
+        <li><a href="exercises/exercise4/exercise4.html">Exercise 4</a></li>
+        <li><a href="https://elbaier.github.io/pressstart2p/index.html">Exercise 5</a></li>
+      </ul>
+      <h3>Other Exercises/ Unfinished Exercises</h3>
+      <ul>
+        <li><a href="#">Exercise 6</a></li>
+        <li><a href="#">Exercise 7</a></li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Helpful Links and Handy Pages</h2>
-    <ul>
-      <li><a href="https://www.w3schools.com/">W3Schools HTML and CSS Reference</a></li>
-      <li><a href="http://myboyfriendcamebackfromth.ewar.ru/">Net Art Anthology: My Boyfriend Came Back Remixes</a></li>
-      <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML Element Reference</a></li>
-      <li><a href="https://login.canvas.ucdavis.edu/">UCD Canvas</a></li>
-    </ul>
-  </section>
+    <section class="links">
+      <h2>Helpful Links and Handy Pages</h2>
+      <ul>
+        <li><a href="https://www.w3schools.com/">W3Schools HTML and CSS Reference</a></li>
+        <li><a href="http://myboyfriendcamebackfromth.ewar.ru/">Net Art Anthology: My Boyfriend Came Back Remixes</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML Element Reference</a></li>
+        <li><a href="https://login.canvas.ucdavis.edu/">UCD Canvas</a></li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Design Inspiration and Other Sites to Look At</h2>
-    <ul>
-      <li><a href="https://workstack.io/">Workstack</a></li>
-      <li><a href="https://acumen.org/">Acumen</a></li>
-      <li><a href="http://www.distancetomars.com/">How Far Is It To Mars?</a></li>
-      <li><a href="https://www.pinterest.com/iamemmabean/art-design/">My Art & Design Inspiration Board on Pinterest</a></li>
-    </ul>
-  </section>
-
+    <section>
+      <h2>Design Inspiration and Other Sites to Look At</h2>
+      <ul>
+        <li><a href="https://workstack.io/">Workstack</a></li>
+        <li><a href="https://acumen.org/">Acumen</a></li>
+        <li><a href="http://www.distancetomars.com/">How Far Is It To Mars?</a></li>
+        <li><a href="https://www.pinterest.com/iamemmabean/art-design/">My Art & Design Inspiration Board on Pinterest</a></li>
+      </ul>
+    </section>
+  </div>
   <footer>
     <p>Emma Baier</p>
     <p>Contact: <a href="&#101;&#108;&#098;&#097;&#105;&#101;&#114;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">&#101;&#108;&#098;&#097;&#105;&#101;&#114;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</a></p>
     <!--The above is my UCD email address, embedded to prevent spam-->
     <a href="https://validator.w3.org/">Link to Code Validation Site</a>
   </footer>
+
 </body>
 
 </html>
